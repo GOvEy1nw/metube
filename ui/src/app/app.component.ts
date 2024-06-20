@@ -53,7 +53,7 @@ export class AppComponent implements AfterViewInit {
     this.format = cookieService.get('metube_format') || 'mp4';
     // Needs to be set or qualities won't automatically be set
     this.setQualities()
-    this.quality = cookieService.get('metube_quality') || 'best';
+    this.quality = cookieService.get('metube_quality') || 'best_ios';
     this.autoStart = cookieService.get('metube_auto_start') !== 'false';
 
     this.activeTheme = this.getPreferredTheme(cookieService);
