@@ -17,7 +17,7 @@ def get_format(format: str, quality: str) -> str:
     Returns:
       dl_format: Formatted download string
     """
-    format = format or "any"
+    format = format or "mp4"
 
     if format.startswith("custom:"):
         return format[7:]
