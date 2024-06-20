@@ -23,7 +23,7 @@ self.addEventListener("fetch", (event) => {
                 body: JSON.stringify({
                   url,
                   quality: "best",
-                  format: "any",
+                  format: "mp4",
                   auto_start: true,
                 }),
               });
