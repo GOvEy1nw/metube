@@ -70,6 +70,10 @@ export class AppComponent implements AfterViewInit {
     });
   }
 
+  isDarkMode(): boolean {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+
   ngAfterViewInit() {
     this.downloads.queueChanged.subscribe(() => {
       this.queueMasterCheckbox.selectionChanged();
